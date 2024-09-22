@@ -8,5 +8,11 @@ while True:
   except ValueError:
     print('Please enter a Positive Integer')
 
-for row in range(1, num + 1):
-  print('*' * num)
+row = 0
+
+while row < num:
+  for column in range(1, num + 1):
+    print('*', end='')
+
+  print('')
+  row = row + 1
