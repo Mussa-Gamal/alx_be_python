@@ -1,12 +1,12 @@
 def perform_operation(num1, num2, operation):
   match operation:
-    case '+':
+    case 'add':
       result = num1 + num2
-    case '-':
+    case 'subtract':
       result = num1 - num2
-    case '*':
+    case 'multiply':
       result = num1 * num2
-    case '/':
+    case 'divide':
       if num2 == 0:
         return print('Cannot divide by zero.')
       else:
