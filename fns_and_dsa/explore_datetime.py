@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 
 def display_current_datetime():
-  current_date = datetime.now().replace(microsecond=0)
-  print(f'Current date and time: {current_date}')
+  current_date = datetime.now()
+  print(f'Current date and time: {current_date.strftime("%Y-%m-%d %H:%M:%S")}')
 
   def calculate_future_date():
     nonlocal current_date
@@ -13,4 +13,3 @@ def display_current_datetime():
 
   calculate_future_date()
 display_current_datetime()
-
